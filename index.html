@@ -1,0 +1,29 @@
+<HTML>
+  <HEAD>
+   <TITLE>
+        USER LOGIN
+   </TITLE>
+   <script>
+	function login()
+	{
+	var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+	if(username=="anoop" && password=="anoop")
+	{
+		window.open("https://www.google.co.in/");
+	}
+	else
+	{
+		alert("Incorrect");
+	}
+}
+   </script>
+  </HEAD>
+  <BODY>
+    <form>
+    	<div>Username: <input id="username" placeholder="anoopkrajan@gmail.com" required> </input></div>
+    	<div>Password: <input id="password" type="password" placeholder="Enter your password" required> </input></div>
+    	<div><button onclick="login();" >Login</button></div>
+    </form>
+  </body>
+  </html>
